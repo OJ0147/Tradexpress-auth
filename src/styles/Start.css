@@ -1,0 +1,16 @@
+.start{
+    /* background-color: var(--lighterdirty-whiter); */
+    /* max-width: 500px;
+    margin: 20px auto 20px; */
+    background-color: #fff;
+   
+    
+
+}
+.start>div{
+    background-color: var(--lighterdirty-whiter);
+    padding-top: 30px;
+}
+.start>div h1{
+    padding-bottom: 25px;
+}

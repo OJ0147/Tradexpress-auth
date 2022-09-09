@@ -1,0 +1,130 @@
+.main-header{
+    color:#26093A;
+    font-size: 25px;
+    width: 600px;
+    margin: auto;
+    padding: 100px 0 75px 0;
+}
+.main{
+    background-color: #F2F2F2;
+    color:#26093A;
+}
+.card-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.card{
+    max-width: 450px;
+    height: 451px;
+    text-align: center;
+    background-color: #fff;
+    padding: 55px 27px;
+    border-radius: 10px;
+    
+}
+.main-image{
+    width: 223px;
+    height: 126px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.main-image img{
+    width: 100%;
+    height: 100%;
+}
+.card h2{
+    margin-bottom: 25px;
+    font-size: 22px;
+}
+.card p{
+    font-size: 15px;
+    line-height: 1.6;
+}
+.learn-btn-container{
+    max-width: 250px;
+    margin:60px auto 0;
+}
+.learn-btn{
+    width: 100%;
+    padding: 10px 40px;
+    background-color: #F2F2F2;
+    border: 1px solid grey;
+    border-radius: 5px;
+    
+}
+@media only screen and (max-width: 1430px){
+    .card{
+        max-width: 400px;
+    }
+}
+@media only screen and (max-width: 1250px){
+    .card{
+        max-width: 350px;
+    }
+}
+@media only screen and (max-width: 1100px){
+    .card{
+        max-width: 300px;
+        padding: 55px 20px;
+    }
+}
+@media only screen and (max-width: 920px){
+    .card{
+        max-width: 280px;
+        padding: 55px 10px;
+    }
+}
+@media only screen and (max-width: 860px){
+    .card{
+        max-width: 550px;
+        padding: 65px;
+        margin-bottom: 50px;
+    }
+    .card-container{
+        flex-direction: column;
+    
+    }
+    .card p{
+        font-size: 16px;
+    }
+    .learn-btn-container{
+        padding-bottom: 80px;
+    }
+   
+}
+@media only screen and (max-width: 660px){
+    .card{
+        max-width: 450px;
+        padding: 55px 27px;
+    }
+    .main-header{
+        font-size: 22px;
+        width:300px;
+        margin: auto;
+        text-align: center;
+    }
+
+}
+@media only screen and (max-width: 470px){
+    .card{
+        max-width: 400px;
+       
+    }
+}
+@media only screen and (max-width: 430px){
+    .card{
+        max-width: 350px;
+       
+    }
+}
+@media only screen and (max-width: 373px){
+    .card{
+        max-width: 300px;
+        margin-bottom: 30px;
+        
+    }
+    .card p{
+        font-size: 15px;
+    }
+}
