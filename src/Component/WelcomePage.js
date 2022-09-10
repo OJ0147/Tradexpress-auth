@@ -7,10 +7,10 @@ const WelcomePage = () => {
         <div className='form-container'>
         
           <h1>You're Almost In!</h1>
-          <h1>Welcome${name} </h1>
+          <h1>Welcome james </h1>
           <img src={maillogo} alt="" />
 
-          <p>An activation link has been sent to ${email} Please click on the link to verify your email and activate your TradExpress account.</p>
+          <p>An activation link has been sent to oj@gmail.com Please click on the link to verify your email and activate your TradExpress account.</p>
 
           <button className="continue">Continue</button>
 

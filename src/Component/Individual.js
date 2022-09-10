@@ -1,12 +1,14 @@
 import React from 'react'
 import '../styles/StartForm.css'
-import { Link } from 'react-router-dom'
+import {NavLink,Link, Outlet } from 'react-router-dom'
+
 
 
 const Individual = () => {
   return (
     <div>
          <form className='start-form'>
+
           
             <div className="form-control">
                 <input type="text" id='name' placeholder='Username'/ >
@@ -32,8 +34,11 @@ const Individual = () => {
                <small>By clicking the Sign Up button below, you agree to TradExpress <a href="#">terms and service</a> </small>
             </div>
             
-
-            <button className="submit">Sign Up</button>
+            <NavLink to='welcomePage'>
+              <button className="submit">Sign Up</button>
+            </NavLink>
+            <Outlet/>
+            
 
             <div className='userlink'>
                <small >Already have an account ? <Link to='/Login'>Click here</Link> </small>

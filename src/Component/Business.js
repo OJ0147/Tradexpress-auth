@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/StartForm.css'
-import { Link } from 'react-router-dom'
+import {NavLink,Outlet ,Link } from 'react-router-dom'
 
 const Business = () => {
   return (
@@ -33,8 +33,10 @@ const Business = () => {
             </div>
             
 
-            <button className="submit">Sign Up</button>
-
+            <NavLink to='welcomePage'>
+              <button className="submit">Sign Up</button>
+            </NavLink>
+            <Outlet/>
             <div className='userlink'>
                <small >Already have an account ? <Link to='/Login'>Click here</Link> </small>
             </div>
