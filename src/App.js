@@ -9,9 +9,10 @@ import Login from './Component/Login'
 import Start from './Component/Start'
 import Individual from './Component/Individual';
 import Business from './Component/Business';
+import WelcomePage from './Component/WelcomePage';
 import Buy from './Component/Buy';
 import Sell from './Component/Sell';
-import WelcomePage from './Component/WelcomePage'
+
 
 
 
@@ -31,8 +32,8 @@ function App() {
         <Route path= '/Start' element={<Start/>} >
           <Route path='individual' element={<Individual/>}/>
           <Route path='business' element={<Business/>}/>
-          <Route path='welcomePage' element={<WelcomePage/>}/>
         </Route>
+        <Route path='/WelcomePage' element={<WelcomePage/>}/>
       </Routes>
       </BrowserRouter>
       

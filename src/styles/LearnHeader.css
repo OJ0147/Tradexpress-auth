@@ -38,6 +38,15 @@
     outline: none;
     font-size: 16px;
     border-radius: 15px;
+    transition: all 0.7s ease;
+    
+}
+.join:hover{
+    transform: scale(1.1);
+    background-color: #fff;
+    color: #71CBF7;
+    border: 2px solid #71CBF7;
+    cursor: pointer;
 }
 @media only screen and (max-width: 1000px){
     .learn-container{

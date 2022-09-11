@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/StartForm.css'
-import {NavLink,Link, Outlet } from 'react-router-dom'
+import {Link } from 'react-router-dom'
 
 
 
@@ -34,10 +34,10 @@ const Individual = () => {
                <small>By clicking the Sign Up button below, you agree to TradExpress <a href="#">terms and service</a> </small>
             </div>
             
-            <NavLink to='welcomePage'>
+            <Link to='/WelcomePage'>
               <button className="submit">Sign Up</button>
-            </NavLink>
-            <Outlet/>
+            </Link>
+            
             
 
             <div className='userlink'>

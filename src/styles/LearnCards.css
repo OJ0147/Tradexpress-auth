@@ -35,6 +35,7 @@
     background-color: #fff;
     max-width: 350px;
     min-height: 500px;
+    box-shadow: 0 3px 11px rgba(0,0,0,0.2);
 
 }
 .cardlearn p{

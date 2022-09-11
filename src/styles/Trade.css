@@ -3,6 +3,7 @@
     margin: auto;
     background-color: #FBF8FD;
     padding: 70px 50px;
+    box-shadow: 1px 3px 11px 2px rgba(0,0,0,0.46);
 }
 .trade{
     background-color: #fff;
