@@ -176,12 +176,15 @@
         max-width: 430px;
     }
     .header{
-        height: 70vh;
+        height: 75vh;
     }
 }
 @media only screen and (max-width: 425px){
     .text-container{
         max-width: 300px;
+    }
+    .header{
+        height: 80vh;
     }
 }
 @media only screen and (max-width: 412px){
