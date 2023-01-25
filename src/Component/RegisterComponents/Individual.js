@@ -31,7 +31,7 @@ const Individual = () => {
             </div>
 
             <div className="terms">
-               <small>By clicking the Sign Up button below, you agree to TradExpress <a href="#">terms and service</a> </small>
+               <small>By clicking the Sign Up button below, you agree to TradExpress <a href="#terms">terms and service</a> </small>
             </div>
             
             <Link to='/WelcomePage'>

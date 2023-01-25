@@ -14,12 +14,12 @@ const WelcomePage = () => {
           <h2>Welcome John Doe </h2>
           <img src={maillogo} alt="" />
 
-          <p>An activation link has been sent to <a href="#">example@gmail.com</a> Please click on the link to verify your email and activate your TradExpress account.</p>
+          <p>An activation link has been sent to <a href="#welcome">example@gmail.com</a> Please click on the link to verify your email and activate your TradExpress account.</p>
 
-          <a href={gmail} target='_blank' className="continue">Continue</a>
+          <a href={gmail} target='_blank' rel="noreferrer" className="continue">Continue</a>
 
-          <small>Didn't get an email?<a href="#">Kindly click resend email</a>  </small><br />
-          <small>Wrong email supplied?<a href="#">Edit email address</a> </small>
+          <small>Didn't get an email?<a href="#welcome">Kindly click resend email</a>  </small><br />
+          <small>Wrong email supplied?<a href="#welcome">Edit email address</a> </small>
 
 
         </div>

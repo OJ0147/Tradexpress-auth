@@ -14,7 +14,7 @@ const LearnHeader = () => {
 
         </div>
         <div className="learn-image">
-          <img src={learndesk} alt="" />
+          <img src={learndesk} alt="learn" />
 
         </div>
     </div>

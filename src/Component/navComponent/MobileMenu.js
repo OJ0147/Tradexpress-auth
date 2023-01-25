@@ -8,7 +8,7 @@ const MobileMenu = () => {
   const closeMobileMenu = ()=> setState(false)
   return (
     <nav className='mobilemenu'>
-      <a href="#menu"onClick={()=>setState(!state)}>{state?<FaTimes size={30} style={{color:'#fff'}}/> : <FaBars size={30} style={{color:'#fff'}}/>} </a>
+      <a href='#menu' onClick={()=>setState(!state)}>{state?<FaTimes size={30} style={{color:'#fff'}}/> : <FaBars size={30} style={{color:'#fff'}}/>} </a>
         {state && <Navlinks isMobile={true} closeMobileMenu={closeMobileMenu} />}
     </nav>
   )

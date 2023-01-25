@@ -27,10 +27,10 @@ const Header = () => {
           </Link>
           <div className="stores">
             <div className=" store" data-aos="fade-right">
-              <a href={applink}><img src={AppleLogo} alt="" /><p><small>Download on the</small><br /> App Store</p></a>
+              <a href={applink}><img src={AppleLogo} alt='mobilestore'/><p><small>Download on the</small><br /> App Store</p></a>
             </div>
             <div className=" store" data-aos="fade-left">
-              <a href={googlelink} ><img src={GoogleLogo} alt="" /> <p><small>Get on</small><br /> Google Play</p></a>
+              <a href={googlelink} ><img src={GoogleLogo} alt='mobilestore'/> <p><small>Get on</small><br /> Google Play</p></a>
             </div>
           </div>
 

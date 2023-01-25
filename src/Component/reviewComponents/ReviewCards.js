@@ -14,7 +14,7 @@ const ReviewCards = (props) => {
       </div>
       <div className="profile-container">
         <div className="profile-image-container">
-          <img src={props.img} alt="" />
+          <img src={props.img} alt="profile" />
         </div>
           <p>{props.name}<br/><span>{props.location}</span></p>
       </div>

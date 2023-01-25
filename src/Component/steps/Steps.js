@@ -26,13 +26,13 @@ const Steps = () => {
 
         </div>
         <div className="image-side">
-          <img src={free} alt="" />
+          <img src={free} alt="step1" />
         </div>
       </div>
 
       <div className="step deposit" data-aos='fade-left'>
         <div className="image-side">
-          <img src={depo} alt="" />
+          <img src={depo} alt="step2" />
         </div>
         <div className="text-side">
           <span>2</span>
@@ -54,7 +54,7 @@ const Steps = () => {
           </div>
         </div>
         <div className="image-side">
-          <img src={trade} alt="" />
+          <img src={trade} alt="step3" />
         </div>
       </div>
 
