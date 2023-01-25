@@ -1,17 +1,18 @@
 
 import './App.css';
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
-import Navbar from './Component/Navbar'
-import Home from './Component/Home'
-import Trade from './Component/Trade'
-import Learn from './Component/Learn'
-import Login from './Component/Login'
-import Start from './Component/Start'
-import Individual from './Component/Individual';
-import Business from './Component/Business';
-import WelcomePage from './Component/WelcomePage';
-import Buy from './Component/Buy';
-import Sell from './Component/Sell';
+import Navbar from './Component/navComponent/Navbar'
+import Home from './pages/Home/Home'
+import Trade from './pages/trade/Trade'
+import Learn from './pages/learn/Learn'
+import Login from './pages/auth/Login/Login'
+import Start from './pages/auth/Register/Start'
+import Individual from './Component/RegisterComponents/Individual';
+import Business from './Component/RegisterComponents/Business';
+import WelcomePage from './pages/resetWelcomePage.js/WelcomePage';
+import Buy from './Component/tradeComponents/Buy';
+import Sell from './Component/tradeComponents/Sell';
+import Reset from './pages/auth/reset/Reset';
 
 
 
@@ -29,6 +30,7 @@ function App() {
         </Route>
         <Route path='/Learn' element={<Learn/>} />
         <Route path='/Login' element={<Login/>} />
+        <Route path='/Reset' element={<Reset/>} />
         <Route path= '/Start' element={<Start/>} >
           <Route path='individual' element={<Individual/>}/>
           <Route path='business' element={<Business/>}/>
