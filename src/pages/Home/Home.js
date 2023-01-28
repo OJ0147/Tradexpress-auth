@@ -6,11 +6,12 @@ import Reviews from '../../Component/reviewComponents/Reviews'
 import Steps from '../../Component/steps/Steps'
 import Stores from '../../Component/storeLink/Stores'
 import Widget from '../../Component/widget/Widget'
+import './Home.css'
 
 
 const Home = () => {
   return (
-    <div>
+    <div className='homepage'>
         <Header/>
         <Widget/>
         <Main/>
