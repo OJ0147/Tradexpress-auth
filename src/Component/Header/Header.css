@@ -4,7 +4,7 @@
     max-width: 100%;
     height: 105vh;
     overflow: hidden;
-    
+
 }
 .text-container{
     width: 566px;
@@ -115,7 +115,7 @@
 }
 @media only screen and (max-width: 1400px){
     .header{
-        overflow: hidden;
+        overflow-x: hidden;
     }
 }
 @media only screen and (max-width: 890px){
@@ -153,6 +153,8 @@
 @media only screen and (orientation: landscape) {
     .header{
         height: 800px;
+        overflow:hidden;
+        max-width: 100%;
     }
 }
 @media only screen and (max-width: 496px){
