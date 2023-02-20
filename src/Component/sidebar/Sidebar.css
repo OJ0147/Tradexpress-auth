@@ -21,6 +21,7 @@
 .sidebar-links ul li{
     display: flex;
     align-items: center;
+    font-size: 16px;
     gap: 15px;
     white-space: nowrap;
     cursor: pointer;
@@ -32,6 +33,7 @@
   
 }
 .sidebar-links ul li a{
+    font-size: 16px;
     text-decoration: none;
     color: #000;
 }
@@ -85,14 +87,13 @@
     }
     .dash-logo{
         padding: 0 15px;
+        width: 200px;
     }
     .support-btn{
         bottom: 2%;
-        
     }
     .sidebar{
-        background: rgb(255, 255, 68);
         height: 100%;
-        
     }
+   
 }
