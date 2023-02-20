@@ -19,6 +19,7 @@
   --deep-grey: #3F3D56;
   --bluish-grey:#575A89;
   --black: #000000;
+  
 }
 
 .form-btn{
@@ -29,4 +30,13 @@
   border: none;
   border-radius: 8px;
   margin-bottom: 15px;
+}
+.btn-white{
+  background-color: var(--dirty-white);
+  color: #7C20BE;
+  border: none;
+  transition: all 0.3s ease-in;
+}
+.btn-white:hover{
+  transform: scale(1.1);
 }

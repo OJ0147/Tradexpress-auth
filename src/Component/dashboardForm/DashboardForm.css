@@ -1,0 +1,116 @@
+
+
+.form-wrapper{
+    min-width: 320px;
+    width: 80%;
+    height: auto;
+    background: #fff;
+    margin: 0 auto;
+    padding: 10px;
+    
+}
+.form-wrapper form{
+    width: 100%;
+}
+
+.form-wrapper a{
+    text-decoration: none;
+    padding: 10px 20px;
+    width: 50%;
+    text-align: center;
+    color: #000;
+}
+.form-wrapper a:active{
+    background: #fff;
+    border-radius: 8px;
+
+}
+.select-control{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+.transaction-type{
+    width: 100%;
+    background-color: #e9e3e3;
+    display: flex;
+    border-radius: 8px;
+    margin: 10px auto;
+    
+}
+.form-slide{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    overflow-x: scroll;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+    
+}
+.form-slide::-webkit-scrollbar{
+    display: none;
+}
+.unChecked{
+    background:var(--dirty-white);
+    
+}
+input:checked~.isChecked{
+    background:var(--dark-purple);
+    color: #fff;
+    border: 0;
+
+}
+.isChecked{
+    min-width: 120px;
+    min-height: 120px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 30px 0;
+    cursor: grab;
+    display: grid;
+    place-content: center;
+    background-color: rgb(252, 192, 252);
+    background-color: rgb(203, 192, 252);
+}
+.isChecked img{
+    width: 50px;
+    height: 60px;
+}
+
+.coin-wrapper input{
+    visibility: hidden;
+}
+.checkbox-label{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+#select-coin,#amount{
+    margin-top: 10px;
+}
+#amount{
+    border: 1px solid grey;
+}
+#select-coin, #select-currency{
+    padding: 10px 3px;
+    border-radius: 10px;
+    width: 150px;
+}
+#select-coin:focus, #select-currency:focus{
+    outline: 0;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+}
+@media only screen and (max-width: 390px){
+    .form-wrapper{
+        min-width: 285px;
+        
+    }
+
+}

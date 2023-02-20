@@ -1,0 +1,98 @@
+/* SIDE BAR */
+
+.sidebar{
+    max-width: 200px;
+    background: #fff;
+    min-height: 100%;
+
+}
+.sidebar-links{
+    padding: 120px 25px;
+    height: 600px; 
+}
+.sidebar-links ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+.sidebar-links ul li{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    white-space: nowrap;
+    cursor: pointer;
+    color: #000;
+    transition: all 0.5s ease-in;
+}
+.sidebar-links ul li:hover{
+    color:rgb(176, 88, 240);
+  
+}
+.sidebar-links ul li a{
+    text-decoration: none;
+    color: #000;
+}
+.sidebar-links ul li:first-child{
+    color: rgb(77, 9, 126);
+    position: fixed;
+    top: 70px;
+    left: 25;
+}
+
+.dash-logo{
+    background: #000;
+    max-width: 100%;
+    padding: 5px 35px;
+    position: fixed;
+    top: 0;
+    left: 0px;
+}
+.dash-logo .logo-link{
+    /* display: block; */
+    
+}
+.dash-logo a img{
+    width: 100%;
+    width: 130px;
+    
+}
+.support-btn{
+    text-decoration: none;
+    padding: 8px;
+    color: #333;
+    border: 1px solid #333;
+    background-color: #FFF;
+    border-radius: 8px;
+    margin-left: 25px;
+    text-align: center;
+    font-size: 14px;
+    position: fixed;
+    bottom: 14%;
+    transition: all 0.5s ease-in;
+}
+.support-btn:hover{
+    color: #fff;
+    background-color: #333;
+}
+
+@media only screen and (max-width: 320px){
+    .sidebar-links{
+        padding: 110px 20px;
+        height: 500px; 
+    }
+    .dash-logo{
+        padding: 0 15px;
+    }
+    .support-btn{
+        bottom: 2%;
+        
+    }
+    .sidebar{
+        background: rgb(255, 255, 68);
+        height: 100%;
+        
+    }
+}

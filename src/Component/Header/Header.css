@@ -36,6 +36,13 @@
     padding: 15px 0;
     border-radius: 5px;
     border: none;
+    background-color: #fff;
+    
+}
+.links button:hover{
+    background-color: #460873;
+    color: #fff;
+    transition: all 0.8s ease-in;
 }
 
 .store a{

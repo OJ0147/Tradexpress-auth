@@ -7,17 +7,14 @@ import {Link} from 'react-router-dom'
 
 const Navbar = (props) => {
   return (
-    <div className="navbar-container">
+    <div className="navbar-container" >
 
       <div className='navbar' >
-      <Link to='/'>
-        <img src={logo} className='logo' alt="logo" />
-      </Link>
-        
-         
-          <DesktopMenu/>
-          <MobileMenu/>
-          
+        <Link to='/'>
+          <img src={logo} className='logo' alt="logo" />
+        </Link>
+        <DesktopMenu/>
+        <MobileMenu/> 
       </div>
     </div>
     

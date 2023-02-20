@@ -1,25 +1,28 @@
 
 .login{
-    height: 90vh;
+    width: 100%;
+    height: calc(100vh - 80px);
     display: grid;
     place-items: center;
 }
-.log-form{
-    width: 500px;
-    padding: 65px 50px;
+.login .form-container{
+    min-width: 400px;
+    height: 500px;
+    padding: 30px;
     background-color: var(--lighterdirty-whiter);
-    height: 80vh;
     box-shadow: 1px 3px 11px 2px rgba(0,0,0,0.46);
+   
 }
-.log-form h1{
+
+.form-container h1{
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
     font-weight: 200;
 }
-.form-control{
-    margin-bottom:20px;
+.login .form-control{
+    margin-bottom:30px;
 }
-.form-control input{
+.login .form-control input{
     width:100%;
     padding: 10px 20px;
     border-radius: 8px;
@@ -53,7 +56,7 @@ small a{
    justify-content: space-between;
    align-items: center; 
    margin-top: -10px;
-   margin-bottom: 100px;
+   margin-bottom: 50px;
    
 }
 .passterms input{
@@ -71,20 +74,13 @@ small a{
     max-width: 200px;
     margin: auto;
 }
-@media only screen and (max-width: 986px){
-    .log-form{
-        padding: 20px 35px;
-        height: 55%;
-    }
-}
+
 
 @media only screen and (max-width: 620px){
-    .log-form{
-        width: 400px;
-    }
-    .log-form h1{
-        font-size: 18px;
-        margin-bottom: 20px;
+    
+    .form-container h1{
+        font-size: 25px;
+        margin-bottom: 25px;
     }
     .passterms{
         margin-bottom: 40px;
@@ -92,11 +88,28 @@ small a{
 
     
 }
-@media only screen and (max-width: 420px){
-    .log-form{
-        width: 300px;
-        padding: 20px 20px;
+@media only screen and (max-width: 420px), (orientation: landscape){
+ 
+    .login{
+        width: 100%;
+        height: 100%;
+        min-height: 100vh;
+        min-height: calc(100vh - 80px);
+        padding: 20px 0;
+     
+    }
+    .login .form-container{
+        min-width: 350px;
+        height: 100%;
+        max-height: 450px;
+        
     }
 
 
 }
+@media only screen and (max-width: 375px) {
+    .login .form-container{
+        min-width: 300px;
+    }
+}
+

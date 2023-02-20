@@ -9,13 +9,12 @@
     -webkit-box-shadow: inset 3px 0px 21px 9px rgba(0,0,0,0.29);
     -moz-box-shadow: inset 3px 0px 21px 9px rgba(0,0,0,0.29);
     box-shadow: inset 3px 0px 21px 9px rgba(0,0,0,0.29);
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
 }
 .widget-container::-webkit-scrollbar{
     display: none;
-}
-.widget-container{
-    -ms-overflow-style: none; 
-    scrollbar-width: none;  
 }
 
 .data-container{
@@ -25,10 +24,12 @@
     margin-bottom: 20px;
     font-size: 12px;
     
+    
 }
 .data-container h2{
     padding-right: 20px;
     font-size: 14px;
+    scroll-snap-align: center;
 } 
 .data-container p{
     white-space: nowrap;
@@ -42,4 +43,5 @@
 }
 .widget-container>div:last-child{
     border-right: 0;
+    
 }

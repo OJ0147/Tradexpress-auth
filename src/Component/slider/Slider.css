@@ -1,0 +1,62 @@
+
+.slide{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    overflow-x: scroll;  
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+}
+.slide::-webkit-scrollbar{
+    display: none;
+}
+.slide>div{
+    min-width: 400px;
+    display: flex ; 
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 5px;
+    background-color: purple;
+    padding: 30px 0;
+    color: var(--white);
+    cursor: grab;
+    scroll-snap-align: center;
+    
+}
+.slide>div img{
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+}
+.coin-name{
+    font-weight: 500;
+    font-size: 18px;
+}
+.coin-value{
+    font-weight: 300;
+    font-size: 16px;
+    color: var(--lighterdirty-whiter);
+}
+.slide>div:first-child{
+    background: var(--darkest2-purple);
+}
+.slide>div:last-child{
+    background: var( --blackish-purple);
+}
+.slide>div:nth-child(2){
+    background: var(--dark-purple);
+}
+.slide>div:nth-child(3){
+    background: var(--darkest-purple);
+}
+@media only screen and (max-width: 500px){
+    .slide>div{
+        min-width: 300px;
+    }
+}
+@media only screen and (max-width: 360px){
+    .slide>div{
+        min-width: 270px;
+    }
+}

@@ -13,6 +13,7 @@
     max-width: 100%;
     background: linear-gradient(to right,#B145FF,#7C20BE,#460873);
     padding: 10px 0;
+   
 }
 .mobilemenu{
     display: none;
@@ -38,7 +39,6 @@
     height: 45px;
     width: 150px;
     margin-left: 1.5rem;
-    
     border-radius: 5px;
 }
 .navlinks ul :nth-child(2){
@@ -49,13 +49,6 @@
     color: var(--dirty-white);
     background-color: transparent;
     
-
-}
-.navlinks ul li .btn-white{
-    background-color: var(--dirty-white);
-    color: #7C20BE;
-    border: none;
-
 }
 
 
@@ -110,6 +103,15 @@
     }
     .desktopmenu{
         display: none;
+    }
+    .link{
+        display: block;
+    }
+    .trade-link{
+        margin-bottom: 10px 
+    }
+    .learn-link{
+        margin-bottom: 20px
     }
 }
 @media only screen and (max-width: 650px){
