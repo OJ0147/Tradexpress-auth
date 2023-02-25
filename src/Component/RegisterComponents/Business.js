@@ -5,6 +5,7 @@ import { createUserWithEmailAndPassword } from 'firebase/auth'
 import { auth } from '../../firebase/config'
 import { toast } from 'react-toastify'
 import Loader from '../loader/Loader'
+import {FaEyeSlash, FaEye} from 'react-icons/fa'
 
 
 const Business = () => {
@@ -16,6 +17,7 @@ const Business = () => {
   const [confirmPassword, setConfirmPassword] = useState("")
   const [isLoading, setIsLoading] = useState(false)
   const navigate= useNavigate()
+  const [showPassword, setShowPassword]=useState(false)
 
   const handleSubmit =(e)=>{
     e.preventDefault();
@@ -59,8 +61,11 @@ const Business = () => {
                 <input type="email"  placeholder='Email' required value={email} onChange={(e)=>setEmail(e.target.value)}/>
             </div>
 
-            <div className="form-control">
-                <input type="password" placeholder='Password' value={password} onChange={(e)=>setPassword(e.target.value)}/>
+            <div className="form-control password">
+                <input type={showPassword? 'text' : 'password'} placeholder='Password' value={password} onChange={(e)=>setPassword(e.target.value)}/>
+                <span className="eye-icon"onClick={()=>setShowPassword(!showPassword)}>
+                  {showPassword? <FaEyeSlash color='#470A73'/> : <FaEye color='#470A73'/>}
+                </span>
             </div>
 
             <div className="form-control">

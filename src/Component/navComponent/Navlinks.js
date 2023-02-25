@@ -89,11 +89,11 @@ const Navlinks = (props) => {
 
             </motion.li>
 
-            <motion.li
+            <motion.li className='learn'
                 initial={animateFrom}
                 animate={animateTo}
                 transition={{delay:0.10}}>
-
+              
               <Link to='/Learn' className='learn-link link'>Learn</Link>
 
             </motion.li>

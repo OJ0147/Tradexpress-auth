@@ -5,12 +5,14 @@ import { signInWithEmailAndPassword } from 'firebase/auth'
 import { auth } from '../../../firebase/config'
 import { toast } from 'react-toastify'
 import Loader from '../../../Component/loader/Loader'
+import { FaEye, FaEyeSlash } from 'react-icons/fa'
 
 
 const Login = () => {
   const [email, setEmail]= useState('')
   const [password, setPassword]= useState('')
   const [isLoading, setIsLoading] = useState(false)
+  const [showPassword, setShowPassword]=useState(false)
   const navigate = useNavigate();
 
   const loginUser =(e)=>{
@@ -50,8 +52,11 @@ const Login = () => {
                 <input type="email"  placeholder='Email' value={email} onChange={(e)=>setEmail(e.target.value)} />
             </div>
 
-            <div className="form-control">
-                <input type="password" placeholder='Password' value={password} onChange={(e)=>setPassword(e.target.value)} />
+            <div className="form-control password">
+                <input type={showPassword? "text":"password"} placeholder='Password' value={password} onChange={(e)=>setPassword(e.target.value)} />
+                <span className="eye-icon" onClick={()=>setShowPassword(!showPassword)}>
+                  {showPassword? <FaEyeSlash color='#470A73'/> : <FaEye color='#470A73'/>}
+                </span>
             </div>
 
 

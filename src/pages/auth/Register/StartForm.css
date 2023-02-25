@@ -74,6 +74,14 @@ small a{
     max-width: 200px;
     margin: auto;
 }
+.password{
+    position: relative;
+}
+.eye-icon{
+    position: absolute;
+    top:10px;
+    right: 10px;
+}
 @media only screen and (max-width: 1120px){
     .start{
         height: 100%;
